@@ -1,0 +1,31 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0 1rem;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+.title:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.title button {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+.title button:hover {
+  opacity: 0.7;
+}
+
+@media print {
+  .title button {
+    display: none;
+  }
+}

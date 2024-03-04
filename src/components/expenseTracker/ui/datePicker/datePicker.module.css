@@ -1,0 +1,41 @@
+.container {
+  margin: 1rem 0;
+}
+
+.container select {
+  min-width: 5rem;
+}
+
+.datePicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.date {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.button {
+  background-color: var(--color-medium);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  padding: 0.2rem;
+}
+.button:hover {
+  opacity: 0.5;
+}
+
+@media print {
+  .container {
+    margin: 0;
+  }
+  .button {
+    display: none;
+  }
+}

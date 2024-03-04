@@ -1,0 +1,68 @@
+.dark {
+  --color-dark: #e5e5e5 !important;
+  --color-medium: #999 !important;
+  --color-light: #333 !important;
+  --color-white: #000;
+}
+:root {
+  --color-dark: #333;
+  --color-medium: #c2c2c2;
+  --color-muted: #d8d8d8;
+  --color-light: #e6e6e6;
+  --color-white: #fff;
+  --color-primary: rgb(63, 109, 210);
+  --color-error: rgb(176, 53, 53);
+}
+@media (prefers-color-scheme: white) {
+  :root {
+    --color-dark: #e5e5e5 !important;
+    --color-medium: #999 !important;
+    --color-light: #333 !important;
+  }
+  .dark {
+    --color-dark: #333 !important;
+    --color-medium: #c2c2c2 !important;
+    --color-light: #e6e6e6 !important;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+button {
+  background-color: var(--color-medium);
+}
+
+svg {
+  fill: var(--color-dark);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: var(--color-error);
+  padding: 0.2rem;
+}
+
+@media print {
+  @page {
+    size: A4;
+  }
+  body {
+    background-color: transparent;
+    overflow: visible;
+  }
+}

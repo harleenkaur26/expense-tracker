@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-color: var(--color-primary);
+  background: linear-gradient(
+    to right,
+    #373b44,
+    var(--color-primary)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.title {
+  margin-bottom: 0;
+  color: var(--color-muted);
+}
+.amount {
+  font-family: sans-serif;
+  color: var(--color-primary);
+  color: var(--color-white);
+}
+.spinner {
+  font-size: 0.2rem;
+}

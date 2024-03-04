@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+}
+.banner {
+  position: absolute;
+  top: 9rem;
+  z-index: -1;
+  max-width: 300px;
+}
+form {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  background-color: var(--color-light);
+  border: 1px solid var(--color-medium);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 200ms;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color-dark);
+  width: 100%;
+}
+.container input[type='submit'] {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-medium);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 200ms;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color-light);
+  background-color: var(--color-primary);
+}
+.container button:hover {
+  opacity: 0.7;
+}
+.container p {
+  color: var(--color-error);
+}

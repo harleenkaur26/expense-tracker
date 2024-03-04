@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 1rem;
+  height: auto;
+  backdrop-filter: blur(5px);
+  background-color: var(--color-white);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  min-height: 95vh;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    /* max-width: 500px; */
+  }
+}
+@media print {
+  .container {
+    box-shadow: none;
+  }
+}

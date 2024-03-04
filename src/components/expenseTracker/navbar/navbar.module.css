@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.circle {
+  background-color: var(--color-medium);
+  border: none;
+  border-radius: 50%;
+}
+.button {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  padding: 0.3rem;
+}
+.button:hover {
+  opacity: 0.5;
+}
+
+@media print {
+  .container {
+    display: none !important;
+  }
+}
